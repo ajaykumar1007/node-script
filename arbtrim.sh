@@ -94,9 +94,9 @@ execute_command "Navigating to prepare directory and configuring .env" \
 "cd ../prepare && cp ../.env.example .env && \
  sed -i 's|^ORBIT_DEPLOYMENT_TRANSACTION_HASH=.*|ORBIT_DEPLOYMENT_TRANSACTION_HASH=${tx_hash}|' .env && \
  sed -i 's|^CHAIN_ID=.*|CHAIN_ID=${CHAIN_ID}|' .env && \
- sed -i 's|^DEPLOYER_PRIVATE_KEY=.*|DEPLOYER_PRIVATE_KEY=0xf745a9e657effb6eb53b6558e78afa75ebd5063840f5340ba31417e19f116af9|' .env && \
- sed -i 's|^BATCH_POSTER_PRIVATE_KEY=.*|BATCH_POSTER_PRIVATE_KEY=0x44ab94407502fa3c53af07d90bdd26d53ecf8ca819d06b7c6eafd18caa5ee31f|' .env && \
- sed -i 's|^VALIDATOR_PRIVATE_KEY=.*|VALIDATOR_PRIVATE_KEY=0xe323c8254a07f97f6dbf2b3d7fd641a233a62a511eeb6287a19bb681a640a6f0|' .env"
+ sed -i 's|^DEPLOYER_PRIVATE_KEY=.*|DEPLOYER_PRIVATE_KEY=0xf745a9e657effb6eb53b6558e78afa75ebd5063f5340ba31417e19f116af9|' .env && \
+ sed -i 's|^BATCH_POSTER_PRIVATE_KEY=.*|BATCH_POSTER_PRIVATE_KEY=0x44ab94407502fa3c53af07d90bdd53ecf8ca819d06b7c6eafd18caa5ee31f|' .env && \
+ sed -i 's|^VALIDATOR_PRIVATE_KEY=.*|VALIDATOR_PRIVATE_KEY=0xe323c8254a07f97f6dbf2b3d7fd641aa62a511eeb6287a19bb681a640a6f0|' .env"
 
 
 # Step 7: Install prepare dependencies
